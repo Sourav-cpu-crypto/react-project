@@ -46,13 +46,13 @@ export const Home = () => {
   <CardGroup>
 
 
-    <Row>
+    <Row >
     {Podcast.Product.map((value,index)=>( 
       <Col md={3}>
-  <Card>
+  <Card >
     <h1>{value.p_name}</h1>
     {value.p_name ==="Stories"?
-    <Card.Img variant="top" src={value.images} height='230px' />:   <Card.Img variant="top" src={value.images} />}
+    <Card.Img variant="top" src={value.images}  height='230px' />:   <Card.Img variant="top" src={value.images} />}
  
     <Card.Body>
  
