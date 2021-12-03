@@ -9,6 +9,10 @@ import {Link,useHistory} from 'react-router-dom';
 import './Header.css'
 
 export default function Header() {
+  function logout(){
+    if(localStorage.getItem('token')!==""){
+      localStorage.clear();
+  }}
   let islog=window.sessionStorage.getItem('token');
   // console.log(islog);
   const [s,sets]=useState(0);
