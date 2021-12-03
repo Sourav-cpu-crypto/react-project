@@ -1,0 +1,16 @@
+{data.subCategory.map((value,index)=>         
+<div>{value.s_name}
+
+{value.images.map((value,index)=>
+  
+   <Col  md={2}>
+<Link  className="link" to={`/Movies1/Movies/action/${value.vname}`}>
+                <img  height='200px' width='200px'src={value.image} className="img1"/>
+                </Link>
+                 </Col>
+)}
+</div>
+)}   
+
+               
+       

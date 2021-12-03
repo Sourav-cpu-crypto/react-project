@@ -1,0 +1,17 @@
+.nav{
+    background-image:require('images/img23.jpg');
+    background-color:black;
+}
+.p{
+    display:flex;
+}
+.d-flex{
+    width:443px;
+}
+.nav-link{
+    color:black!important;
+}
+/* .nav-link:hover{
+    color: red !important;;
+    
+} */
