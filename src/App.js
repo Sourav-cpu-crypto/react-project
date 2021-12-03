@@ -13,7 +13,7 @@ function App() {
    
   <video  autoPlay loop  muted style={{position:"absolute",
   width:"100%",left:"50%" ,top:"50%",height:"50%",
-  objectfit:"cover",transform:"translate(-50%,-50%)",
+  objectfit:"fill",transform:"translate(-50%,-50%)",
   zindex:"-1"
 
   }}>
