@@ -21,9 +21,9 @@ import {Link}  from 'react-router-dom';
           <div className="movie1p" >
   <Row className="p5s">
       <Col md={6}>
- <ReactPlayer className="movie1p2"  url={details.url}/>
+ <ReactPlayer  width='700px' className="movie1p2"  url={details.url}/>
     </Col>
-     <Col md={7}>
+     <Col md={8}>
        <p className="movies1des">
 {details.description}
 </p>
