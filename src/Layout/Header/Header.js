@@ -36,7 +36,7 @@ useEffect(() => {
     return (
       <Navbar bg="light" expand="lg">
   <Container fluid>
-    <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+    <Navbar.Brand href="#">VMATE</Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
       <Nav
@@ -66,9 +66,7 @@ useEffect(() => {
            <NavDropdown.Item as={Link} to="/Music/Music">Music</NavDropdown.Item>
            <NavDropdown.Item as={Link} to="/Stories/Stories">Stories</NavDropdown.Item>
           <NavDropdown.Divider />
-          <NavDropdown.Item href="#action5">
-            Something else here
-          </NavDropdown.Item>
+          
         </NavDropdown>
         
       </Nav>
