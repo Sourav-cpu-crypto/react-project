@@ -1,6 +1,7 @@
 import React,{lazy,Suspense} from 'react'
 import {Route,Switch,BrowserRouter as Router} from 'react-router-dom'
 import {Movies} from './movies.js'
+import Protected from './Protected.js'
 import {Movies1}  from './Movies1.js'
 import {Music} from './Music.js'
 import {Search} from './Search.js'
@@ -37,7 +38,7 @@ export default function Routes() {
         <Route exact path="/RegForm1" component={RegForm1}></Route>
         <Route exact path="/Login" component={Login}></Route>
         <Route exact path="/Movies/:m1" component={Movies}></Route>
-        <Route exact path="/Music/:m9" component={Music}></Route>
+        <Route  exact path="/Music/:m9" component={Music}></Route>
         <Route exact path="/Music1/:m10/:m11/:m12" component={Music1}></Route>
         <Route exact path="/Stories/:m2" component={Stories}></Route>
         <Route exact path="/Movies1/:m3/:m4/:m5" component={Movies1}></Route>
