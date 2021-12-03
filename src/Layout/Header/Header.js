@@ -69,13 +69,13 @@ useEffect(() => {
         
       </Nav>
       <Form className="d-flex">
-        <FormControl
+        <FormControl className="headersearch" variant="outline-success"
           type="search"
           placeholder="Search"
           className="me-2"
           aria-label="Search"
           onChange={(e)=>setProductState1(e.target.value)}/>
-        <Button variant="outline-success" >Search</Button>
+       
       </Form>
     </Navbar.Collapse>
   </Container>

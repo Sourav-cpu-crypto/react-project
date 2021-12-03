@@ -3,10 +3,11 @@ import {Route,Switch,BrowserRouter as Router} from 'react-router-dom'
 import {Movies} from './movies.js'
 import Protected from './Protected.js'
 import {Movies1}  from './Movies1.js'
+import {FAQ}   from './FAQ.js'
 import {Music} from './Music.js'
 import {Search} from './Search.js'
 import {Music1} from './Music1.js'
-import {FAQ} from './FAQ.js'
+import feedback  from './feedback.js'
 import {Stories} from './Stories.js'
 import {Stories1}  from './Stories1.js'
 import {Home} from './home.js'
@@ -45,6 +46,7 @@ export default function Routes() {
         <Route exact path="/Stories1/:m6/:m7/:m8" component={Stories1}></Route>
         <Route exact path="/Contact" component={Contact}></Route>
         <Route exact path="/FAQ" component={FAQ}></Route>
+        <Route exact path="/feedback" component={feedback}></Route>
         <Route exact path="/About" component={About}></Route>
         <Route exact path="/Search/:se" component={Search}></Route>
             <Suspense fallback={<h1>Loading...</h1>}>

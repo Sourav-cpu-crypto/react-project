@@ -11,10 +11,6 @@ export const Home = () => {
 
  
   const [p,setp]=useState();
-  const [show, setShow] = useState({key:false,key1:''});
-  function handleShow (url){   setShow({...show,key:true,key1:url}) };
-
-  const handleClose = () => setShow(false);
 
   const [productState1,setProductState1]=useState("");
 
@@ -42,52 +38,28 @@ export const Home = () => {
   
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"   width='480px' height='480px'
-      src="holder.js/800x400?text=Third slide&bg=e5e5e5"
-      alt="Third slide"
-    />
-    <Carousel.Caption>
-   
-    </Carousel.Caption>
-  </Carousel.Item>
+  
 </Carousel>
 
 
-    
-    {/* {Podcast.Product.map((value,index)=>( 
-          
-       
-      <h1>{value.p_name}</h1> 
-      <img src={value.images}/>
- 
-     ))}   */}
   <>
   <CardGroup>
-  {/* {Contents.Content.map((value,index)=>( 
-      <Col md={3}>
-  
-    <img src={value.image} />
 
-  
-  </Col>))} */}
 
     <Row>
     {Podcast.Product.map((value,index)=>( 
       <Col md={3}>
   <Card>
     <h1>{value.p_name}</h1>
-    <Card.Img variant="top" src={value.images} />
+    {value.p_name ==="Stories"?
+    <Card.Img variant="top" src={value.images} height='230px' />:   <Card.Img variant="top" src={value.images} />}
+ 
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
+ 
+   
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
+    
     </Card.Footer>
   </Card>
   
@@ -99,13 +71,7 @@ export const Home = () => {
 
 
 
-      <Modal show={show.key} onHide={handleClose}>
-        <Modal.Header closeButton>
-        <ReactPlayer width='480px' height='240px' url={show.key1}/>
-        </Modal.Header>
-   
-        
-      </Modal>
+  
    
          
                
