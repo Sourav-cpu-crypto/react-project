@@ -17,7 +17,7 @@ export const Home = () => {
 
     return (
         <div>
-         <Carousel variant="dark" margin-top='90px'>
+         {/* <Carousel variant="dark" margin-top='90px'>
   <Carousel.Item>
     <img
       className="d-block w-100" width='480px' height='540px'
@@ -39,11 +39,15 @@ export const Home = () => {
     </Carousel.Caption>
   </Carousel.Item>
   
-</Carousel>
+</Carousel> */}
 
+<video >
+<source src ="https://youtu.be/FHQxhsE1Xkc" type="video/mp4"/>
+    
 
+    </video>
   <>
-  <CardGroup>
+  <CardGroup className="homecg">
 
 
     <Row >
