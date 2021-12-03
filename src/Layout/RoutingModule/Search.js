@@ -28,12 +28,8 @@ export const Search = (props) => {
 
 
     <Row>
-    <input
-         type="text"
-            placeholder="search" onChange={(event)=>{
-                setProductState1(event.target.value)
-            }}
-          />    
+  
+            
                
 {
 Contents.Content.filter((value)=>{
