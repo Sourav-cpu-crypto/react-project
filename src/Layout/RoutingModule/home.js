@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import ReactPlayer from 'react-player';
 import home from './home.css';
+import video3 from './video3.mp4'
 import Contents from './podcast1.json'
 import {Carousel,Figure,Card,Row,Col,Button,Modal,CardGroup} from 'react-bootstrap'
 import {Link}  from 'react-router-dom';
@@ -41,11 +42,17 @@ export const Home = () => {
   
 </Carousel> */}
 
-<video >
-<source src ="https://youtu.be/FHQxhsE1Xkc" type="video/mp4"/>
+<video  autoPlay loop  muted style={{position:"absolute",
+  width:"100%",left:"50%" ,top:"40%",height:"50%",
+  objectfit:"fill",transform:"translate(-50%,-50%)",
+  zindex:"-1"
+
+  }}>
+<source src ={video3} type="video/mp4"/>
     
 
     </video>
+    
   <>
   <CardGroup className="homecg">
 
