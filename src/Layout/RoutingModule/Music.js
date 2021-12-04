@@ -18,7 +18,7 @@ export const Music = (props) => {
 {return value.s_name !==""  ?        
 <div><h1 text-align="center" className="h1movie" margin-left='60px'>{value.s_name}</h1>
 <Row>
-{value.images.map((value1,index)=>
+{value.details.map((value1,index)=>
   
    <Col  md={2}>
 <Link  className="link" to={`/Music1/Music/${value.s_name}/${value1.vname}`}>
