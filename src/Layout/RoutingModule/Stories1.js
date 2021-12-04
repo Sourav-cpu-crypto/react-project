@@ -12,7 +12,7 @@ import {Link}  from 'react-router-dom';
   
     let data= Podcast.Product.find(data=>data.p_name === props.match.params.m6)
     let action= data.subCategory.find(data=>data.s_name === props.match.params.m7)
-    let images1= action.images.find(data=>data.vname === props.match.params.m8)
+    let images1= action.details.find(data=>data.vname === props.match.params.m8)
   console.log(data);
   
   
@@ -34,7 +34,4 @@ import {Link}  from 'react-router-dom';
       )
   }
   
-
-
-
 
