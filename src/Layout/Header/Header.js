@@ -24,7 +24,7 @@ function logout(){
 
 useEffect(() => {
   if(productState1 == "" )
-  history.push("/")
+  history.goBack()
 
   else{
     {console.log(productState1);}
